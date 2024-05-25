@@ -16,7 +16,7 @@ async function analyzeImage() {
     reader.onload = async function(event) {
         const base64String = event.target.result.split(',')[1];
 
-        const response = await fetch('https://vision.googleapis.com/v1/images:annotate?key=YOUR_API_KEY', {
+        const response = await fetch('https://vision.googleapis.com/v1/images:annotate?key=ab9110e16c7593eadee1ddd4d5b9be0cd8a64120', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
